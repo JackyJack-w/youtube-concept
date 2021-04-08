@@ -16,6 +16,12 @@ body{
     display: flex;
     align-items: center;
     margin-bottom: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 99;
 
 }
 
@@ -109,8 +115,30 @@ body{
 }
 
 .sidebar{
+    
+    position: fixed;
+    top: 114px;
+    left: 0;
+    height: calc(100% - 114px);
+    overflow-y: auto;
+    width: 17%;
     padding-left: 32px;
+    background-color: #fff;
+ 
+    
+
 }
+
+.content{
+    width: 100%;
+    margin-top: 85px;
+    height: auto;
+   padding-top: 30px;
+    padding-left: 19%;
+    
+}
+
+
 
 .nav-menu{
     margin-top: 0;
@@ -159,4 +187,220 @@ margin-bottom: 30px;
     width: 26px;
     height: 26px;
     border-radius: 50%;
+}
+
+.channel-avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+.channel{
+    position: relative;
+    margin-bottom: 49px;
+}
+
+.channel-title{
+
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #19202C;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 33px;
+    margin-bottom: 30px;
+}
+
+.channel-text{
+
+    margin-left: 20px;
+}
+
+.video-thumb{
+    width: 250px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 14px;
+    position: relative;
+}
+.video-duration{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background:  rgba(0, 0,0, 0.3);
+    border-radius: 12px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    padding: 3px 9px;
+    }
+
+.thumbnail{
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+}
+.video-title{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #19202C;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.video-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    line-height: 16px;
+
+    color: #C2C2C2;
+
+}
+
+.video-card{
+    width: 250px;
+}
+.video-counter{
+    display: flex;
+    align-items: center;
+}
+.video-views{
+    margin-right: 5px;
+}
+.video-views::after{
+    content: '';
+    background-color: #C2C2C2;
+    width: 2px;
+    height: 2px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.channel-button{
+    cursor: pointer;
+}
+.slider-buttons{
+    position: absolute;
+    top: 15px;
+    right: 13%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 66px;
+}
+
+
+.recommended{
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.recommended-title{
+    display: flex;
+    align-items: center;
+    color: #19202C;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 33px;
+    margin-bottom: 30px;
+}
+
+.thumbnail-recommended{
+
+    width: 540px; 
+    height: 250px;
+    object-fit: cover;
+}
+
+.recommended-card{
+    width: 540px;
+}
+
+.recommended-video-thumb{
+    width: 540px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 14px;
+    position: relative;
+}
+
+.video-info-rec{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #C2C2C2;
+
+}
+.recom-channel{
+    position: relative;
+    margin-bottom: 64px;
+}
+.category-title{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #19202C;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 33px;
+    margin-bottom: 30px;
+    
+    
+}
+
+
+.rec-channel-avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+.rec-title-text{
+padding-left: 20px;
+}
+
+.channel-rec-text{
+padding-left: 19px;
+    font-size: 16px;
+line-height: 20px;
+color: #C2C2C2;
+font-weight: 400;
+
+}
+
+.button{
+
+position: absolute;
+right: 152px;
+transition: all 0.3s;
+}
+.sub-button{
+   width: 154px;
+height: 40px;
+background: #FF0000;
+border-radius: 20px;
+border:1px solid #FFFFFF;
+}
+.button:hover .sub-button {
+    border: 1px solid #FF0000;
+
+    background: #ffffff;
+}
+.sub-counter{
+    font-size: 16px;
+line-height: 20px;
+align-items: center;
+color: #fff;
+}
+.button:hover .sub-counter {
+    color: #FF0000;
 }
